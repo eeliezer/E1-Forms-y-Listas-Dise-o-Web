@@ -10,11 +10,11 @@
     <h1>Formulario de registro</h1>
     <form action="">
       <p>
-        <label for="">Nombre:</label>
+        <label for="cuadro_texto_name">Nombre:</label>
         <input
           type="text"
-          name=""
-          id=""
+          name="text_name"
+          id="cuadro_texto_name"
           placeholder="Coloca tu nombre"
           required
           minlength="3"
@@ -22,11 +22,11 @@
         />
       </p>
       <p>
-        <label for="">Apellidos:</label>
+        <label for="cuadro_texto_surname">Apellidos:</label>
         <input
           type="text"
-          name=""
-          id=""
+          name="text_surname"
+          id="cuadro_texto_surname"
           placeholder="Coloca tu apellido"
           required
           minlength="3"
@@ -35,17 +35,19 @@
       </p>
       <p>
         <label for="genero">Sexo:</label>
-        <input type="radio" name="genero" id="hombre" value="Hombre" />
+        <input type="radio" name="elegir_genero" id="genero" value="Hombre" />
         <label for="">Hombre</label>
-        <input type="radio" name="genero" id="mujer" value="Mujer" />
+        <input type="radio" name="elegir_genero" id="genero" value="Mujer" />
         <label for="">Mujer</label>
-        <input type="radio" name="genero" id="mujer" value="Mujer" />
+        <input type="radio" name="elegir_genero" id="genero" value="otro" />
         <label for="">No especificar</label>
       </p>
       <p>
-        <label for="">Correo:</label>
+        <label for="cuadro_email">Correo:</label>
         <input
           type="email"
+          name="correo"
+          id="cuadro_email"
           placeholder="Coloca tu correo"
           required
           minlength="3"
@@ -53,14 +55,14 @@
         />
       </p>
       <p>
-        <input type="checkbox" name="check" id="check" />
-        <label for="check"
+        <input type="checkbox" name="check_info" id="check_i" />
+        <label for="check_i"
           >Deseo recibir información sobre novedades y ofertas</label
         >
       </p>
       <p>
-        <input type="checkbox" name="check_aceptar" id="check" required />
-        <label for="check_aceptar"
+        <input type="checkbox" name="check_aceptar" id="check_a" required />
+        <label for="check_a"
           >Declaro haber leído y aceptar las condiciones generales del programa
           y la normativa sobre protección de datos</label
         >
